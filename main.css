@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    height: 500px;
+    margin-top: 30px;
+    background: rgb(18, 185, 207);
+  }
+  
+  #startScreen {
+    margin: auto;
+    margin-top: 200px;
+    padding-top:30px;
+    position: relative;
+    width: 500px;
+    height: 230px;
+    color:blanchedalmond ;
+    text-align: center;
+    border: 5px solid;
+    border-radius: 30px;
+    box-shadow: 1px 1px 32px rgb(228, 223, 223);
+  }
+  
+  #startScreen div {
+    height: 50%;
+  }
+  
+  #startScreen h1 {
+    position:absolute;
+    width: 100%;
+    color: rgb(245, 250, 252);
+    font-size: 40px;
+    text-shadow: 0 1px 2px;  
+  }
+  
+  #startScreen p {
+    font-weight: bold;
+    border:3px solid whitesmoke;
+    width:200px;
+    height: 60px;
+    margin:0 auto;
+    padding-top: 10px;
+    color:aliceblue;
+  }
+  /* .nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  } */
+  #hearticon{
+    display:flex;
+    height:50px;
+    color:black;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+#cardContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 0 50px 0 50px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    
+}
+
+.flip-card{
+background-color: transparent;
+border-radius: 5px;
+width:100%;
+height: 180px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front {
+  background-color: rgb(13, 194, 218);
+  border:3px solid  blanchedalmond ;
+  box-shadow: 1px 1px 32px rgb(228, 223, 223);
+  border-radius: 10px;
+  color:black;
+  width: 100%;
+  height:100%;
+  
+}
+
+.flip-card-back {
+
+  background-color: rgb(39, 164, 223);
+  color: white;
+  transform: rotateY(180deg);
+  width: 100%;
+  height:100%;
+}
